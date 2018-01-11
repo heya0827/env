@@ -67,15 +67,15 @@ PROMPT="${fg_bold[cyan]}%D{%Y/%m/%d %H:%M:%S} ${screen_no}%/${reset_color}"$'\n'
 PROMPT2="%_%% "
 SPROMPT="%r is correct? [n,y,a,e]: " 
 
-#precmd() {
-#   echo -ne "\033]0;${USER}@${HOST%%.*}:${PWD}\007"
-##  [ ${STY} ] && echo -ne "\ek$(basename $(pwd))\e\\"
-#}
+precmd() {
+   echo -ne "\033]0;${USER}@${HOST%%.*}:${PWD}\007"
+#  [ ${STY} ] && echo -ne "\ek$(basename $(pwd))\e\\"
+}
 
-#preexec() {
-##  [ ${STY} ] && echo -ne "\ek${1%% *}\e\\"
-#   [ ${STY} ] && echo -ne "\ek$1\e\\"
-#}
+preexec() {
+#  [ ${STY} ] && echo -ne "\ek${1%% *}\e\\"
+   [ ${STY} ] && echo -ne "\ek$1\e\\"
+}
 
 #chpwd() {
 #   ls

@@ -1,15 +1,13 @@
-[alias]
-	all-log = log --oneline --decorate --graph --branches --tags --remotes
 [push]
 	default = simple
 [user]
 	email = heya@beauty-navi.com
-	name = pasona_heya
+	name = heya
 [alias]
 	s = status
 	b = branch
 	c = checkout
 	m = merge
 	mt = mergetool
-	all-log=log --oneline --decorate --graph --branches --tags --remotes
+	all-log = log --oneline --decorate --graph --branches --tags --remotes
 

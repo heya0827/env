@@ -1,4 +1,5 @@
 shell /usr/bin/zsh
 defscrollback 100000
 termcapinfo xterm* ti@:te@
+hardstatus alwayslastline "%-w%{= ck}%n %t%{-}%+w"
 
